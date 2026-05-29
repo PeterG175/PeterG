@@ -4,6 +4,6 @@
     "href": "2026 05 Svitlo Calculus Course Lesson 1.html",
     "title": "Welcome to My Website",
     "section": "",
-    "text": "This is my first Quarto-powered page\n\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 4, 6, 8, 10]\n\nplt.plot(x, y)\nplt.title(\"My First Chart\")\nplt.xlabel(\"X\")\nplt.ylabel(\"Y\")\nplt.show()"
+    "text": "This is my second Quarto-powered page\n\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 7, 6, 3, 10]\n\nplt.plot(x, y)\nplt.title(\"My Second Chart\")\nplt.xlabel(\"X\")\nplt.ylabel(\"Y\")\nplt.show()"
   }
 ]

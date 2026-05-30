@@ -1,9 +1,52 @@
 [
   {
-    "objectID": "2026 05 Svitlo Calculus Course Lesson 1.html",
-    "href": "2026 05 Svitlo Calculus Course Lesson 1.html",
-    "title": "Welcome to My Website",
+    "objectID": "Lesson 5.html",
+    "href": "Lesson 5.html",
+    "title": "Lesson 5",
     "section": "",
-    "text": "This is my second Quarto-powered page\n\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 7, 6, 3, 10]\n\nplt.plot(x, y)\nplt.title(\"My Second Chart\")\nplt.xlabel(\"X\")\nplt.ylabel(\"Y\")\nplt.show()"
+    "text": "---\ntitle: \"Lesson 5\"\n---\n\nThis page is under construction…",
+    "crumbs": [
+      "Lesson 5"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html",
+    "href": "Lesson 3.html",
+    "title": "Lesson 3",
+    "section": "",
+    "text": "Lesson 3\nThis page is under construction…",
+    "crumbs": [
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html",
+    "href": "Lesson 1.html",
+    "title": "Lesson 1",
+    "section": "",
+    "text": "Lesson 1: Application of differenciation\nHello Svitlo student! Within this lesson, we are going to try and understand why we learn about differenciation without looking at too much Maths. I hope you enjoy and if there are any mistakes or have any questions then you can email me on ‘ppgaskell@outlook.com’.\n\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 7, 6, 3, 10]\n\nplt.plot(x, y)\nplt.title(\"My Second Chart\")\nplt.xlabel(\"X\")\nplt.ylabel(\"Y\")\nplt.show()",
+    "crumbs": [
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 2.html",
+    "href": "Lesson 2.html",
+    "title": "Lesson 2",
+    "section": "",
+    "text": "Lesson 2\nThis week we will look at a Mathematical approach to differenciation.",
+    "crumbs": [
+      "Lesson 2"
+    ]
+  },
+  {
+    "objectID": "Lesson 4.html",
+    "href": "Lesson 4.html",
+    "title": "Lesson 4",
+    "section": "",
+    "text": "Lesson 4\nThis page is under construction…",
+    "crumbs": [
+      "Lesson 4"
+    ]
   }
 ]

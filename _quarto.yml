@@ -3,8 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "My Website"
-  navbar:
-    left:
-      - href: 2026 05 Svitlo Calculus Course Lesson 1.ipynb
-        text: Home
+  title: "Svitlo Calculus Course"
+  sidebar:
+     style: "docked"
+     search: true
+     contents:
+       - text: "Lesson 1"
+         href: Lesson 1.ipynb
+       - text: "Lesson 2"
+         href: Lesson 2.ipynb
+       - text: "Lesson 3"
+         href: Lesson 3.ipynb
+       - text: "Lesson 4"
+         href: Lesson 4.ipynb
+       - text: "Lesson 5"
+         href: Lesson 5.ipynb

@@ -1,32 +1,13 @@
 [
   {
-    "objectID": "Lesson 5.html",
-    "href": "Lesson 5.html",
-    "title": "Lesson 5",
+    "objectID": "Lesson 4.html",
+    "href": "Lesson 4.html",
+    "title": "Lesson 4",
     "section": "",
-    "text": "---\ntitle: \"Lesson 5\"\n---\n\nThis page is under construction…",
+    "text": "Lesson 4\nThis page is under construction…",
     "crumbs": [
-      "Lesson 5"
-    ]
-  },
-  {
-    "objectID": "Lesson 3.html",
-    "href": "Lesson 3.html",
-    "title": "Lesson 3",
-    "section": "",
-    "text": "Lesson 3\nThis page is under construction…",
-    "crumbs": [
-      "Lesson 3"
-    ]
-  },
-  {
-    "objectID": "Lesson 1.html",
-    "href": "Lesson 1.html",
-    "title": "Lesson 1",
-    "section": "",
-    "text": "Lesson 1: Application of differenciation\nHello Svitlo student! Within this lesson, we are going to try and understand why we learn about differenciation without looking at too much Maths. I hope you enjoy and if there are any mistakes or have any questions then you can email me on ‘ppgaskell@outlook.com’.\n\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 7, 6, 3, 10]\n\nplt.plot(x, y)\nplt.title(\"My Second Chart\")\nplt.xlabel(\"X\")\nplt.ylabel(\"Y\")\nplt.show()",
-    "crumbs": [
-      "Lesson 1"
+      "Lessons",
+      "Lesson 4"
     ]
   },
   {
@@ -36,17 +17,125 @@
     "section": "",
     "text": "Lesson 2\nThis week we will look at a Mathematical approach to differenciation.",
     "crumbs": [
+      "Lessons",
       "Lesson 2"
     ]
   },
   {
-    "objectID": "Lesson 4.html",
-    "href": "Lesson 4.html",
-    "title": "Lesson 4",
+    "objectID": "Introduction.html",
+    "href": "Introduction.html",
+    "title": "Introduction",
     "section": "",
-    "text": "Lesson 4\nThis page is under construction…",
+    "text": "Hello Svitlo student! Welcome to my lesson course on calculus. This page has been created to tell you everything you need to know about this lesson course. A few lessons ago we talked about the flipped learning classrooom approach, and I said that I would try it in the new term so here it is! For those of you who are unsure on what flipped classroom learning is, then it is simply where the students learn the content before the lesson and then the content is reviewed during the lesson that we have. This is the first time I am doing a flipped learning approach and I have decided to write down some advantages and disadvantages:\nFigure 1: Advantages and disadvantages of a flipped learning classroom approach\n*As shown in Tutal and Yazar (2021) (https://link.springer.com/article/10.1007/s12564-021-09706-9)",
     "crumbs": [
-      "Lesson 4"
+      "Home"
+    ]
+  },
+  {
+    "objectID": "Introduction.html#course-content",
+    "href": "Introduction.html#course-content",
+    "title": "Introduction",
+    "section": "Course content",
+    "text": "Course content\nThere are 5 lessons in total with the content in each lesson highlighted below. Please be aware that as this is the first time I am formatting my lessons in this way, so the content in the lessons could change if the class finds the content too easy or too challenging.\n\nIn lesson one we will look at why we use derivatives and what a limit is.\nIn lesson two we will move away from asking why? we do the maths, and start studying what a derivative is.\nIn lesson three we will have a summary of derivatives and introduce some hard derivative rules.\nIn lesson four we will learn what an integral is and what it is used for\nIn lesson five we will look at some harder concepts using both integration and differenciation.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "Introduction.html#course-structure",
+    "href": "Introduction.html#course-structure",
+    "title": "Introduction",
+    "section": "Course structure",
+    "text": "Course structure\nEach lesson has three different steps. The first step is to read through the content and look at the diagrams to show you that Maths, the second step is to have a go at the practice questions to make sure that you’re understanding the Maths correctly and the last step is to review the content in our weekly lesson. One of the problems you could face is that you do not know if you’re getting the practice questions right or wrong, so to fix this I will send out questions on the google classroom for you to check your work. This will also be useful for me as I will be able to see how quickly you get through the content, and also if you’re getting the questions correct or incorrect.\n\n\n\n\n\n\n\n\nFigure 2: Flowchart showing you how to work through the course",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "Introduction.html#testing",
+    "href": "Introduction.html#testing",
+    "title": "Introduction",
+    "section": "Testing",
+    "text": "Testing\nBefore the lesson course starts, I want to ask a few questions to check that the google classroom quizzes will work correctly. Please can you all answer the following questions:\n\nWhat’s your name?\nParis is the capital city of which country?\nHow many lessons are there in this lesson course?",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html",
+    "href": "Lesson 1.html",
+    "title": "Lesson 1: Why study calculus?",
+    "section": "",
+    "text": "Within this lesson, we will learn what calculus is and why we study it. We will start with an example looking at how the speed of someone running is calculated, and then we will introduce the idea of a limit. We will build up your understanding by doing lots of examples, and if you have any questions then please message on the google classroom.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html#section-1-calculating-speed",
+    "href": "Lesson 1.html#section-1-calculating-speed",
+    "title": "Lesson 1: Why study calculus?",
+    "section": "Section 1: Calculating speed",
+    "text": "Section 1: Calculating speed\nFor this section I have made up these numbers, this is more about the understanding than the Maths. Our first question we are going to answer is “How can we calculate the speed of something?”. This might seem obvious, because if you wanted to know the speed of someone who ran a 100 meter race in 15 seconds, then you would do the following calculation: \\[ Speed=\\dfrac{Distance}{Time}=\\dfrac{100}{15}=6.67ms^{-1}\\] This means that if Bob did run a 100 m in 15 s, then his average speed would be 6.67 m/s. However, we do know that he will not have travelled the entire race at this speed. During the start of the race he will be accellerating to his top speed, and he will be at his top speed in the middle of the race once he has fully accellerated. This means during the start he will be travelling less than 6.67 m/s and at the middle of the race he will be travelling quicker than 6.67 m/s. So how would we calculate the speed of the Bob once he is exactly 15 m into the race? As we are dealing with distance, it makes sense to change the distance that we are measuring over. Instead of working out his speed for the entire race, we can work out his speed for the first 30 m, as this will give us a more accurate value of how fast he is travelling at 15 m. If it took Bob 8 s to run the first 30 meters, then we will get: \\[ Speed = \\dfrac{Distance}{Time}=\\dfrac{30}{8}=3.75ms^{-1} \\] As you can see, this 3.75 m/s is slower than 6.67 m/s which is exactly what we expected. We can also decrease the distance we measure on even more, for example we can measure the time it takes Bob to run between 10 m and 20 m. Measuring the time it takes Bob to run between 10 m and 20 m will give a more accurate value for the speed Bob is running at when he is exactly 15 m into the race. This can be seen in figure 1.\n\n\n\n\n\n\n\n\nFigure 1: A diagram showing a 100m race track, with the 15m mark labelled.\n\n\n\n\n\nNow we can take a step back and think about what is happening. As we decrease the distance that we measure over, then the value of the speed becomes more accurate. So we want to measure over the smallest distance possible in to find the most accurate value for the speed of the person. Now we can have a go at some practice questions.\n\nPractice questions: calculating speed\n\nImagine a cyclist in a 10000 m race. I want to find out their speed at exactly halfway into the race. Which distace to measure over would give me the most accurate value of their speed? Please choose one of the three options.\n\nBetween 3000m and 6000m\nBetween 4500m and 9000m\nBetween 4000m and 6000m\n\nAt the 2008 Olympics Usain Bolt broke the world record for the 100 m sprint. Figure 2 below shows the times that Bolt crossed each 10 m interval. Use this data to answer the following questions:\n\nWhat was Bolt’s average speed for the entire race?\nUse two different intervals to calculate Bolt’s speed at the 35 m mark, explain why you have got different answers.\nCalculate Bolt’s speed at 75 m using the interval which would give you the most accurate answer.\n\nWe have mentioned how a measuring the time over a smaller distance gives a more accurate value for the speed of a person in a race. However, can you explain the practical difficulty of measuring over an extremely small distance. Such as between 9.99 m and 10.01 m\n\n\n\n\n\n\n\n\n\nFigure 2: A table showing the times Usain bolt crossed each 10 m interval in his record breaking 100 m sprint.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html#section-2-displacement-time-graphs",
+    "href": "Lesson 1.html#section-2-displacement-time-graphs",
+    "title": "Lesson 1: Why study calculus?",
+    "section": "Section 2: Displacement time graphs",
+    "text": "Section 2: Displacement time graphs\nNote that for this section I am using displacement and velocity instead of distance and speed. For those of you who have not studied the differences between distance and displacement (or speed and velocity), then you can think of them as the same thing and you will still be able to follow along. You should now have a good understanding of how speed is calculated, now we can look at what this means on a graph. Displacement time graphs are commonly used to solve problems using speed. Displacement is displayed on the y-axis of the graph and time is displayed on the x-axis of the graph. For example, if I walked into university, then sat through a lecture and then got the bus back home, my displacement time graph would look something like the following:\n\n\n\n\n\n\n\n\n\nFrom graph 1 we can see a few things. The y-axis tells us that the University is 1km away from my house, as the line becomes horizontal at the 1km mark. The x-axis is telling us that it has taken me 30 minutes (or 0.5 hours) to walk into University, then spent 1 hour at University, then it took me around 20 minutes to get home on the bus. For a displacement time graph, the gradient of the graph represents the velocity. This can be seen because the gradient of the graph when I take the bus is steeper than the gradient of the graph when I walk, which implies that I am moving quicker when I’m on the bus, and slower when I’m walking. We can also see that the gradient of the graph is zero for the duration of my lecture, which means that I am not moving while watching my lecture. The last comment I want to make about this graph is that it is not perfectly accurate. We can see that the gradients of each portion of the graph is a straight line, which implies that I am moving at a constant velocity. We know this is not true because in real life you may have to stop or speed up for certain reasons (i.e. while I’m walking I may have to stop at traffic lights or while I’m on the bus the bus might wait at a bus stop). From this graph, there are two key takeaways:\n\nThe gradient of a displacement time graph represents the velocity\nThe steeper the gradient, then the greater the velocity\n\n\nPractice questions: Displacement time graphs\n\nThis question uses graph 2. Graph 2 shows a displacement time graph of Bolt’s 100 m world record. Using the graph, answer the following two questions:\n\nExplain why the gradient of the graph between 10 m and 100 m is a lot steeper than the gradient of the graph between 0 m and 10 m.\nExplain how you would work out the displacement of Bolt at around 60 m into the race.\n\nThis question uses graph 3. I go for a trip on my bicycle. I cycle for 20 minutes to go to the shops, then I cycle for 10 minutes to my friends house, and I then cycle all the way home. My trip can be shown using graph 3. Please answer the following 3 questions:\n\nHow long did I spend at my friends house? Answer in hours.\nCan you calculate my speed for when I cycled back home from my friends house? As this is speed I need the answer as a positive number, so if you get a negative answer then get rid of the negative sign and just submit that number.\nAfter travelling 2km on the way to the shops, I got a puncture and had to get off my bike to repair it. I repaired the puncture in 5 minutes and got back on my bike to continue my journey. I still got to the shops 20 minutes after leaving my house. What does the new graph look like? (You can draw the new graph or just describe it).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow you may have realised that with all of the calculations so far we are still using two values of the distance to measure the time over and using that to calculate speed. You may ask yourself the question “Is it possible to only using one value of the distance to calculate the speed?” and you can do this using calculus! However, before we look at that, we need to understand what a limit is.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html#section-3-what-is-a-limit",
+    "href": "Lesson 1.html#section-3-what-is-a-limit",
+    "title": "Lesson 1: Why study calculus?",
+    "section": "Section 3: What is a limit?",
+    "text": "Section 3: What is a limit?\nIn Maths, a limit is used to say that if we have some number x that is getting closer and closer to another number y , then x=y . For example, if we have some number x , that keeps getting closer and closer to the number 3, then we will write: \\[ \\lim_{x \\rightarrow 3} x = 3 \\] One way that I like to think of limits is by thinking of an ant on a number line. As you can see from figure 3, the ant is starting from the left and it will keep moving to the right until it reaches the number 3, then it will stop.\n\n\n\n\n\n\n\n\nFigure 3: An ant moving slowly along a number line until it reaches the number 3\n\n\n\n\n\nFor this example it does not matter if the ant starts at the number -1 and move to the right (like it has in the diagram), or if the ant starts at the number 6 and moves to the left, as it will always finish at the number 3. There can be times when the value of the limit does depend on whether your increasing or decreasing with your value of x (if your ant is moving to the left or to the right). One of the practice questions I have included for this section shows this and I have included it to challenge you so do not worry if you struggle with it, as we will talk about it when we have the lesson.\nAll of that aside, most limits I will show you can simply be solved be a direct substitution. For example, if I have the following: \\[ \\lim_{x \\rightarrow 2} x^2-4x+5 \\] Then all I need to do to solve this is substitute in x=2 , which will give me: \\[ \\lim_{x \\rightarrow 2} x^2-4x+5 = (2)^2-4(2)+5=4-8+5=1\\]\nA more visual understanding of this would be to picture the ant moving along the curve of the graph. For example, below shows the graph of \\(y=x^2-4x+5\\):\n\n\n\n\n\n\n\n\n\nFrom this curve, we can imagine that an ant is stood to the right of two and to the left of two, with both ants making their way towards 2 but they’re walking along the curve. This can be shown in the diagram below, where the arrows represent the direction that the ants are moving:\n\n\n\n\n\n\n\n\nFigure 4: A graph showing ants moving along a curve.\n\n\n\n\n\nFrom this curve it is easy to see what will happen to the ants. Both ants will meet at \\(x=2\\) where \\(y=1\\), just like what we saw in the previous example. Remember this technique when solving practice question 3.\nWe have looked at limits where we are converging to a number, but what happens when we are going off to infinity. Unfortunately, as infinity is not a number we cannot simply substitute it into an formula and solve it, so instead there are two main ways that we solve limits with infinity. Suppose I wanted to find out what \\(lim_{x \\rightarrow \\infty} -x^3+5x^2-x-6\\) is equal to. The first way would be to draw a graph:\n\n\n\n\n\n\n\n\n\nJust by looking at the graph, we can see that it looks like as \\(x\\) gets bigger, then \\(y\\) gets smaller meaning that if \\(x\\) is going off to infinity, then \\(y\\) is going to negative infinity. We can confirm this by trying the second method. I said that we cannot substitute infinity into the formula (as infinity is not a number), however we can still just substitute in really big numbers to see what happens. We can substitite in 1000, 10000 and 100000 into \\(-x^3+5x^2-x-6\\) to see what it gives us:\n\\[ -(1000)^3+5(1000)^2-(1000)-6=-995001006\\] \\[ -(10000)^3+5(10000)^2-(10000)-6=-9.9950001001 \\times 10^{11}\\] \\[ -(100000)^3+5(100000)^2-(100000)-6= -9.999500001 \\times 10^{14}\\]\nFrom this, we can see that when we substitute in larger values of \\(x\\) then the \\(y\\) values decrease by larger amounts, meaning that \\(\\lim_{x \\rightarrow \\infty} -x^3+5x^2-x-6 = - \\infty\\).",
+    "crumbs": [
+      "Lessons",
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 1.html#practice-questions-limits",
+    "href": "Lesson 1.html#practice-questions-limits",
+    "title": "Lesson 1: Why study calculus?",
+    "section": "Practice questions: limits",
+    "text": "Practice questions: limits\n\nWhat is \\(lim_{x \\rightarrow 5} 4x-16\\) equal to?\nWhat is \\(lim_{x \\rightarrow 0} \\dfrac{1}{x+2}\\) equal to?\nExplain why \\(lim_{x \\rightarrow 0} \\dfrac{1}{x}\\) cannot have a limit. Hint: draw a graph and look what happens when you approach zero from the left, and when you approach zero from the right.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 1"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html",
+    "href": "Lesson 3.html",
+    "title": "Lesson 3",
+    "section": "",
+    "text": "Lesson 3\nThis page is under construction…",
+    "crumbs": [
+      "Lessons",
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 5.html",
+    "href": "Lesson 5.html",
+    "title": "Lesson 5",
+    "section": "",
+    "text": "---\ntitle: \"Lesson 5\"\n---\n\nThis page is under construction…",
+    "crumbs": [
+      "Lessons",
+      "Lesson 5"
     ]
   }
 ]

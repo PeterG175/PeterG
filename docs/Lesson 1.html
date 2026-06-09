@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lesson 1 – Svitlo Calculus Course</title>
+<title>Lesson 1: Why study calculus? – Svitlo Calculus Course</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,6 +71,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -118,7 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lesson 1.html">Lesson 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lesson 1.html">Lessons</a></li><li class="breadcrumb-item"><a href="./Lesson 1.html">Lesson 1</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -145,34 +139,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lessons</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Lesson 1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lesson 1</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lesson 2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lesson 2</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lesson 3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lesson 3</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lesson 4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lesson 4</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Lesson 5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lesson 5</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -182,9 +193,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lesson 1.html">Lessons</a></li><li class="breadcrumb-item"><a href="./Lesson 1.html">Lesson 1</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lesson 1</h1>
+<h1 class="title">Lesson 1: Why study calculus?</h1>
 </div>
 
 
@@ -201,21 +212,177 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="lesson-1-application-of-differenciation" class="level1">
-<h1>Lesson 1: Application of differenciation</h1>
-<p>Hello Svitlo student! Within this lesson, we are going to try and understand why we learn about differenciation without looking at too much Maths. I hope you enjoy and if there are any mistakes or have any questions then you can email me on ‘ppgaskell@outlook.com’.</p>
-<div id="db2fb732-3e94-47ca-ba0a-f3f07b48ca8f" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">10</span>]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"My Second Chart"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"X"</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Y"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Within this lesson, we will learn what calculus is and why we study it. We will start with an example looking at how the speed of someone running is calculated, and then we will introduce the idea of a limit. We will build up your understanding by doing lots of examples, and if you have any questions then please message on the google classroom.</p>
+<section id="section-1-calculating-speed" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-calculating-speed">Section 1: Calculating speed</h2>
+<p>For this section I have made up these numbers, this is more about the understanding than the Maths. Our first question we are going to answer is <em>“How can we calculate the speed of something?”</em>. This might seem obvious, because if you wanted to know the speed of someone who ran a 100 meter race in 15 seconds, then you would do the following calculation: <span class="math display">\[ Speed=\dfrac{Distance}{Time}=\dfrac{100}{15}=6.67ms^{-1}\]</span> This means that if Bob did run a 100 <em>m</em> in 15 <em>s</em>, then his average speed would be 6.67 <em>m/s</em>. However, we do know that he will not have travelled the entire race at this speed. During the start of the race he will be accellerating to his top speed, and he will be at his top speed in the middle of the race once he has fully accellerated. This means during the start he will be travelling less than 6.67 <em>m/s</em> and at the middle of the race he will be travelling quicker than 6.67 <em>m/s</em>. So how would we calculate the speed of the Bob once he is exactly 15 <em>m</em> into the race? As we are dealing with distance, it makes sense to change the distance that we are measuring over. Instead of working out his speed for the entire race, we can work out his speed for the first 30 <em>m</em>, as this will give us a more accurate value of how fast he is travelling at 15 <em>m</em>. If it took Bob 8 <em>s</em> to run the first 30 meters, then we will get: <span class="math display">\[ Speed = \dfrac{Distance}{Time}=\dfrac{30}{8}=3.75ms^{-1} \]</span> As you can see, this 3.75 <em>m/s</em> is slower than 6.67 <em>m/s</em> which is exactly what we expected. We can also decrease the distance we measure on even more, for example we can measure the time it takes Bob to run between 10 <em>m</em> and 20 <em>m</em>. Measuring the time it takes Bob to run between 10 <em>m</em> and 20 <em>m</em> will give a more accurate value for the speed Bob is running at when he is exactly 15 <em>m</em> into the race. This can be seen in figure 1.</p>
+<div id="cell-fig-race-example" class="cell" data-scrolled="true" data-execution_count="16">
+<div class="cell-output cell-output-display">
+<div id="fig-race-example" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-race-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 1_files/figure-html/fig-race-example-output-1.png" class="img-fluid figure-img">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-race-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A diagram showing a 100m race track, with the 15m mark labelled.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Now we can take a step back and think about what is happening. As we decrease the distance that we measure over, then the value of the speed becomes more accurate. So we want to measure over the smallest distance possible in to find the most accurate value for the speed of the person. Now we can have a go at some practice questions.</p>
+<section id="practice-questions-calculating-speed" class="level3">
+<h3 class="anchored" data-anchor-id="practice-questions-calculating-speed">Practice questions: calculating speed</h3>
+<ol type="1">
+<li>Imagine a cyclist in a 10000 <em>m</em> race. I want to find out their speed at exactly halfway into the race. Which distace to measure over would give me the most accurate value of their speed? Please choose one of the three options.
+<ol type="1">
+<li>Between 3000m and 6000m</li>
+<li>Between 4500m and 9000m</li>
+<li>Between 4000m and 6000m</li>
+</ol></li>
+<li>At the 2008 Olympics Usain Bolt broke the world record for the 100 <em>m</em> sprint. Figure 2 below shows the times that Bolt crossed each 10 <em>m</em> interval. Use this data to answer the following questions:
+<ol type="1">
+<li>What was Bolt’s average speed for the entire race?</li>
+<li>Use two different intervals to calculate Bolt’s speed at the 35 <em>m</em> mark, explain why you have got different answers.</li>
+<li>Calculate Bolt’s speed at 75 <em>m</em> using the interval which would give you the most accurate answer.</li>
+</ol></li>
+<li>We have mentioned how a measuring the time over a smaller distance gives a more accurate value for the speed of a person in a race. However, can you explain the practical difficulty of measuring over an extremely small distance. Such as between 9.99 <em>m</em> and 10.01 <em>m</em></li>
+</ol>
+<div id="cell-fig-bolt-question" class="cell" data-execution_count="17">
+<div class="cell-output cell-output-display">
+<div id="fig-bolt-question" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bolt-question-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 1_files/figure-html/fig-bolt-question-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bolt-question-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A table showing the times Usain bolt crossed each 10 m interval in his record breaking 100 m sprint.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="section-2-displacement-time-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="section-2-displacement-time-graphs">Section 2: Displacement time graphs</h2>
+<p>Note that for this section I am using displacement and velocity instead of distance and speed. For those of you who have not studied the differences between distance and displacement (or speed and velocity), then you can think of them as the same thing and you will still be able to follow along. You should now have a good understanding of how speed is calculated, now we can look at what this means on a graph. Displacement time graphs are commonly used to solve problems using speed. Displacement is displayed on the y-axis of the graph and time is displayed on the x-axis of the graph. For example, if I walked into university, then sat through a lecture and then got the bus back home, my displacement time graph would look something like the following:</p>
+<div id="7eb65645-3318-4527-be98-395f61b98c50" class="cell" data-execution_count="42">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lesson 1_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From graph 1 we can see a few things. The y-axis tells us that the University is 1km away from my house, as the line becomes horizontal at the 1km mark. The x-axis is telling us that it has taken me 30 minutes (or 0.5 hours) to walk into University, then spent 1 hour at University, then it took me around 20 minutes to get home on the bus. For a displacement time graph, the gradient of the graph represents the velocity. This can be seen because the gradient of the graph when I take the bus is steeper than the gradient of the graph when I walk, which implies that I am moving quicker when I’m on the bus, and slower when I’m walking. We can also see that the gradient of the graph is zero for the duration of my lecture, which means that I am not moving while watching my lecture. The last comment I want to make about this graph is that it is not perfectly accurate. We can see that the gradients of each portion of the graph is a straight line, which implies that I am moving at a constant velocity. We know this is not true because in real life you may have to stop or speed up for certain reasons (i.e.&nbsp;while I’m walking I may have to stop at traffic lights or while I’m on the bus the bus might wait at a bus stop). From this graph, there are two key takeaways:</p>
+<ol type="1">
+<li>The gradient of a displacement time graph represents the velocity</li>
+<li>The steeper the gradient, then the greater the velocity</li>
+</ol>
+<section id="practice-questions-displacement-time-graphs" class="level3">
+<h3 class="anchored" data-anchor-id="practice-questions-displacement-time-graphs">Practice questions: Displacement time graphs</h3>
+<ol type="1">
+<li>This question uses graph 2. Graph 2 shows a displacement time graph of Bolt’s 100 <em>m</em> world record. Using the graph, answer the following two questions:
+<ol type="1">
+<li>Explain why the gradient of the graph between 10 <em>m</em> and 100 <em>m</em> is a lot steeper than the gradient of the graph between 0 <em>m</em> and 10 <em>m</em>.</li>
+<li>Explain how you would work out the displacement of Bolt at around 60 <em>m</em> into the race.</li>
+</ol></li>
+<li>This question uses graph 3. I go for a trip on my bicycle. I cycle for 20 minutes to go to the shops, then I cycle for 10 minutes to my friends house, and I then cycle all the way home. My trip can be shown using graph 3. Please answer the following 3 questions:
+<ol type="1">
+<li>How long did I spend at my friends house? Answer in hours.</li>
+<li>Can you calculate my speed for when I cycled back home from my friends house? As this is speed I need the answer as a positive number, so if you get a negative answer then get rid of the negative sign and just submit that number.</li>
+<li>After travelling 2km on the way to the shops, I got a puncture and had to get off my bike to repair it. I repaired the puncture in 5 minutes and got back on my bike to continue my journey. I still got to the shops 20 minutes after leaving my house. What does the new graph look like? (You can draw the new graph or just describe it).</li>
+</ol></li>
+</ol>
+<div id="847cbda1-f963-4cf5-aba8-81f596c0cbc3" class="cell" data-execution_count="47">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lesson 1_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="e36ad405-e303-4e7c-a3be-568e89fab3f9" class="cell" data-execution_count="54">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lesson 1_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Now you may have realised that with all of the calculations so far we are still using two values of the distance to measure the time over and using that to calculate speed. You may ask yourself the question <em>“Is it possible to only using one value of the distance to calculate the speed?”</em> and you can do this using calculus! However, before we look at that, we need to understand what a limit is.</p>
+</section>
+</section>
+<section id="section-3-what-is-a-limit" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-what-is-a-limit">Section 3: What is a limit?</h2>
+<p>In Maths, a limit is used to say that if we have some number <em>x</em> that is getting closer and closer to another number <em>y</em> , then <em>x=y</em> . For example, if we have some number <em>x</em> , that keeps getting closer and closer to the number 3, then we will write: <span class="math display">\[ \lim_{x \rightarrow 3} x = 3 \]</span> One way that I like to think of limits is by thinking of an ant on a number line. As you can see from figure 3, the ant is starting from the left and it will keep moving to the right until it reaches the number 3, then it will stop.</p>
+<div id="cell-fig-ant-number-line" class="cell" data-execution_count="18">
+<div class="cell-output cell-output-display">
+<div id="fig-ant-number-line" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ant-number-line-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 1_files/figure-html/fig-ant-number-line-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ant-number-line-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: An ant moving slowly along a number line until it reaches the number 3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>For this example it does not matter if the ant starts at the number -1 and move to the right (like it has in the diagram), or if the ant starts at the number 6 and moves to the left, as it will always finish at the number 3. There can be times when the value of the limit does depend on whether your increasing or decreasing with your value of <em>x</em> (if your ant is moving to the left or to the right). One of the practice questions I have included for this section shows this and I have included it to challenge you so do not worry if you struggle with it, as we will talk about it when we have the lesson.</p>
+<p>All of that aside, most limits I will show you can simply be solved be a direct substitution. For example, if I have the following: <span class="math display">\[ \lim_{x \rightarrow 2} x^2-4x+5 \]</span> Then all I need to do to solve this is substitute in <em>x=2</em> , which will give me: <span class="math display">\[ \lim_{x \rightarrow 2} x^2-4x+5 = (2)^2-4(2)+5=4-8+5=1\]</span></p>
+<p>A more visual understanding of this would be to picture the ant moving along the curve of the graph. For example, below shows the graph of <span class="math inline">\(y=x^2-4x+5\)</span>:</p>
+<div id="7c7a0b5f-713b-41fa-903c-1266752548a5" class="cell" data-execution_count="61">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lesson 1_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From this curve, we can imagine that an ant is stood to the right of two and to the left of two, with both ants making their way towards 2 but they’re walking along the curve. This can be shown in the diagram below, where the arrows represent the direction that the ants are moving:</p>
+<div id="cell-fig-ants-graph-5" class="cell" data-execution_count="59">
+<div class="cell-output cell-output-display">
+<div id="fig-ants-graph-5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ants-graph-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 1_files/figure-html/fig-ants-graph-5-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ants-graph-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: A graph showing ants moving along a curve.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>From this curve it is easy to see what will happen to the ants. Both ants will meet at <span class="math inline">\(x=2\)</span> where <span class="math inline">\(y=1\)</span>, just like what we saw in the previous example. Remember this technique when solving practice question 3.</p>
+<p>We have looked at limits where we are converging to a number, but what happens when we are going off to infinity. Unfortunately, as infinity is not a number we cannot simply substitute it into an formula and solve it, so instead there are two main ways that we solve limits with infinity. Suppose I wanted to find out what <span class="math inline">\(lim_{x \rightarrow \infty} -x^3+5x^2-x-6\)</span> is equal to. The first way would be to draw a graph:</p>
+<div id="1482bac9-a6ed-4932-a731-03b500ee07ce" class="cell" data-execution_count="60">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lesson 1_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Just by looking at the graph, we can see that it looks like as <span class="math inline">\(x\)</span> gets bigger, then <span class="math inline">\(y\)</span> gets smaller meaning that if <span class="math inline">\(x\)</span> is going off to infinity, then <span class="math inline">\(y\)</span> is going to negative infinity. We can confirm this by trying the second method. I said that we cannot substitute infinity into the formula (as infinity is not a number), however we can still just substitute in really big numbers to see what happens. We can substitite in 1000, 10000 and 100000 into <span class="math inline">\(-x^3+5x^2-x-6\)</span> to see what it gives us:</p>
+<p><span class="math display">\[ -(1000)^3+5(1000)^2-(1000)-6=-995001006\]</span> <span class="math display">\[ -(10000)^3+5(10000)^2-(10000)-6=-9.9950001001 \times 10^{11}\]</span> <span class="math display">\[ -(100000)^3+5(100000)^2-(100000)-6= -9.999500001 \times 10^{14}\]</span></p>
+<p>From this, we can see that when we substitute in larger values of <span class="math inline">\(x\)</span> then the <span class="math inline">\(y\)</span> values decrease by larger amounts, meaning that <span class="math inline">\(\lim_{x \rightarrow \infty} -x^3+5x^2-x-6 = - \infty\)</span>.</p>
+</section>
+<section id="practice-questions-limits" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions-limits">Practice questions: limits</h2>
+<ol type="1">
+<li>What is <span class="math inline">\(lim_{x \rightarrow 5} 4x-16\)</span> equal to?</li>
+<li>What is <span class="math inline">\(lim_{x \rightarrow 0} \dfrac{1}{x+2}\)</span> equal to?</li>
+<li>Explain why <span class="math inline">\(lim_{x \rightarrow 0} \dfrac{1}{x}\)</span> cannot have a limit. Hint: draw a graph and look what happens when you approach zero from the left, and when you approach zero from the right.</li>
+</ol>
 
 
 </section>

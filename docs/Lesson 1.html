@@ -232,7 +232,7 @@ Figure&nbsp;1: A diagram showing a 100m race track, with the 15m mark labelled.
 </div>
 <p>Now we can take a step back and think about what is happening. As we decrease the distance that we measure over, then the value of the speed becomes more accurate. So we want to measure over the smallest distance possible in to find the most accurate value for the speed of the person. Now we can have a go at some practice questions.</p>
 <section id="practice-questions-calculating-speed" class="level3">
-<h3 class="anchored" data-anchor-id="practice-questions-calculating-speed">Practice questions: calculating speed</h3>
+<h3 class="anchored" data-anchor-id="practice-questions-calculating-speed">Practice questions: Calculating speed</h3>
 <ol type="1">
 <li>Imagine a cyclist in a 10000 <em>m</em> race. I want to find out their speed at exactly halfway into the race. Which distace to measure over would give me the most accurate value of their speed? Please choose one of the three options.
 <ol type="1">
@@ -377,14 +377,44 @@ Figure&nbsp;4: A graph showing ants moving along a curve.
 <p>From this, we can see that when we substitute in larger values of <span class="math inline">\(x\)</span> then the <span class="math inline">\(y\)</span> values decrease by larger amounts, meaning that <span class="math inline">\(\lim_{x \rightarrow \infty} -x^3+5x^2-x-6 = - \infty\)</span>.</p>
 </section>
 <section id="practice-questions-limits" class="level2">
-<h2 class="anchored" data-anchor-id="practice-questions-limits">Practice questions: limits</h2>
+<h2 class="anchored" data-anchor-id="practice-questions-limits">Practice questions: Limits</h2>
 <ol type="1">
 <li>What is <span class="math inline">\(lim_{x \rightarrow 5} 4x-16\)</span> equal to?</li>
 <li>What is <span class="math inline">\(lim_{x \rightarrow 0} \dfrac{1}{x+2}\)</span> equal to?</li>
 <li>Explain why <span class="math inline">\(lim_{x \rightarrow 0} \dfrac{1}{x}\)</span> cannot have a limit. Hint: draw a graph and look what happens when you approach zero from the left, and when you approach zero from the right.</li>
 </ol>
+</section>
+<section id="notes-from-the-lesson-on-962026" class="level2">
+<h2 class="anchored" data-anchor-id="notes-from-the-lesson-on-962026">Notes from the lesson on 9/6/2026</h2>
+<p>Within our previous lesson we managed to start looking at some of the content within section 1. During the lesson I found that some of my explanations had not been as good as planned. I am writing this section just to help with some of the questions as I found that there was some confusion.</p>
+<section id="how-to-calculate-speed" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-calculate-speed">How to calculate speed</h3>
+<p>The speed of a person is defined as follows: <span class="math display">\[ Speed = \dfrac{\text{Change in distance}}{\text{Change in time}}\]</span> We know that the ‘Change in distance’ is going to be the length of the interval, and the ‘Change in time’ is going to be how long it took the person to go through the interval. This means we can write: <span class="math display">\[ Speed = \dfrac{\text{Change in distance}}{\text{Change in time}} = \dfrac{\text{Distance at the end - Distance at the start}}{\text{Time at the start - Time at the end}}\]</span> Note that when I say ‘at the start’ and ‘at the end’ I mean ‘at the start of the interval’ and ‘at the end of the interval’.</p>
+</section>
+<section id="example-question" class="level3">
+<h3 class="anchored" data-anchor-id="example-question">Example question</h3>
+<p>If we are trying to solve part c of the 2nd question in section 1 then we can use this formula. We know that the smallest interval around 75 <em>m</em> is going to give the the most accurate value for the speed. Knowing this we will consider the 70 <em>m</em> to 80 <em>m</em> interval. Now we can use the formula for speed: <span class="math display">\[ Speed = \dfrac{\text{Distance at the end - Distance at the start}}{\text{Time at the start - Time at the end}} = \dfrac{80 - 70}{7.96 - 7.14} = \dfrac{10}{0.82} \approx 12. 20 ms^{-1}\]</span></p>
+</section>
+<section id="common-mistakes" class="level3">
+<h3 class="anchored" data-anchor-id="common-mistakes">Common mistakes</h3>
+<p>During the lesson some students had a go at solving part c of the 2nd question in section 1 and they made mistakes. Mistakes are brilliant because it shows that you are learning and it also helps me as I will be able to explain it better to future students. One of the mistakes made was calculating the speed for the interval 0 <em>m</em> to 75 <em>m</em>. This can be done by working out the speed for the interval 0 <em>m</em> to 70 <em>m</em> and the speed for the interval 0 <em>m</em> to 80 <em>m</em>, and then taking an average of the two. That calculation would be done like this: <span class="math display">\[ \text{Speed for the interval 0m to 75m} = \dfrac{\text{Speed for the interval 0m and 70m}+ \text{Speed for the interval 0m and 80m}}{2} = \dfrac{\frac{70}{7.14}+\frac{80}{7.96}}{2} \approx 9.925 ms^{-1} \]</span> The problem with this is that we are using an interval which is 75 <em>m</em>, so we are still including the start of the race where Bolt will be running slower. Therefore, this method will not produce the most accurate value for Bolts speed at 75 <em>m</em>. I have included a diagram below to help explain this:</p>
+<div id="cell-fig-common-mistake-speed-calculation" class="cell" data-execution_count="63">
+<div class="cell-output cell-output-display">
+<div id="fig-common-mistake-speed-calculation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-common-mistake-speed-calculation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 1_files/figure-html/fig-common-mistake-speed-calculation-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-common-mistake-speed-calculation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: A diagram showing the incorrect interval to calculate the speed over, and the correct interval.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

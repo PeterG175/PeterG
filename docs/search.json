@@ -13,9 +13,42 @@
   {
     "objectID": "Lesson 2.html",
     "href": "Lesson 2.html",
-    "title": "Lesson 2",
+    "title": "Lesson 2: Calculating the exact speed.",
     "section": "",
-    "text": "Lesson 2\nThis week we will look at a Mathematical approach to differenciation.",
+    "text": "Using what we learned in last weeks lesson, we will now be able to understand what differenciation is.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 2"
+    ]
+  },
+  {
+    "objectID": "Lesson 2.html#section-1-displacement-as-a-function-of-time",
+    "href": "Lesson 2.html#section-1-displacement-as-a-function-of-time",
+    "title": "Lesson 2: Calculating the exact speed.",
+    "section": "Section 1: Displacement as a function of time",
+    "text": "Section 1: Displacement as a function of time\nWe have already looked at displacement-time graphs where we were told the journey someone has made (example: someone going to the shops and back home), and then using that we draw a displacement-time graph. Now we will look at how to change those graphs into an equation.\n\nExample 1\nImagine we have Bob running a race at \\(5 m/s\\). If I asked you how far Bob has travelled after 5 seconds, you can simply do \\(5 \\times 5 = 25 m\\) because we know that \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\). If I asked you how far Bob has travelled after 100 seconds, you will do a similar calculation and work out \\(5 \\times 100 = 500\\). Now if I ask you the question, “How far will Bob have travelled after ‘t’ seconds?” you know that if I ask you to calculate how far Bob has travelled at a certain time, then all you need to do is multiply the number by 5. If I say that \\(x\\) represents the distance, and \\(t\\) represents the time, then we can write the equation \\[ x(t) = 5t\\]\nNotice that I have used \\(x(t)\\) on the left have side of the equation. You may not have seen this before, so be careful because this does NOT mean \\(x \\times t\\). When you have a variable (in this case the distance) which is calculated only by using another variable (in this case the time), then we write \\(x(t)\\) to tell whoever is reading our work that \\(t\\) is the only thing used to calculate \\(x\\). If I also wanted to use how sloped the ground was (represented by \\(s\\)) to calculate how far Bob has travelled, then I would have \\(x(s,t)\\) because the distance Bob travels depends on both how long he has been running for, and also how sloped the ground is (if it is really steep then he might run slower).\nAnyway, now that we have our equation for the displacement \\(x(t)=5t\\), we can plot a displacement-time graph of Bob.\n\n\n\n\n\n\n\n\n\nUsing this graph you can calculate values of \\(x(t)\\) without doing any Maths. All you need to do it pick your value of time, \\(t\\), find that value of time on the x-axis, then go up until you hit the line, then go to the left until you get to the y-axis. The value on the y-axis will give you your value for \\(x(t)\\). For example, if I wanted to work out the displacement after 40 minutes, you would do the following:\n\n\n\n\n\n\n\n\nFigure 1: The steps showing you how to calculating the displacement for a certain time using a graph.\n\n\n\n\n\nNow it’s your turn to have a go at some practice questions",
+    "crumbs": [
+      "Lessons",
+      "Lesson 2"
+    ]
+  },
+  {
+    "objectID": "Lesson 2.html#practice-questions-displacement-as-a-function-of-time",
+    "href": "Lesson 2.html#practice-questions-displacement-as-a-function-of-time",
+    "title": "Lesson 2: Calculating the exact speed.",
+    "section": "Practice questions: Displacement as a function of time",
+    "text": "Practice questions: Displacement as a function of time\nImagine that a regular person and an olympic sprinter are going to race each other in a 100 m sprint. To make the race fair, the regular person will start 40 m in front of the olympic sprinter. The regular person will run at exactly \\(6.5 ms^{-1}\\) and the sprinter will run at exactly \\(10 ms^{-1}\\). Please answer the following questions:\n\nAfter 2 seconds, how far (in meters) from the finish is the regular person?\nWhat will the equations for displacement be for the regular person and the sprinter? (Hint: remember to include the head start for the regular person).\nWho will win the race?\nDraw a displacement-time graph with the regular person and the sprinter. Use the graph to explain your answer to part 3.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 2"
+    ]
+  },
+  {
+    "objectID": "Lesson 2.html#section-2-non-linear-displacement-functions",
+    "href": "Lesson 2.html#section-2-non-linear-displacement-functions",
+    "title": "Lesson 2: Calculating the exact speed.",
+    "section": "Section 2: Non-linear displacement functions",
+    "text": "Section 2: Non-linear displacement functions\nThe title of this section may look tricky, but it means that within this section we will look at displacement-time graphs which are not a straight line. For example, imagine you are stood at the top of a building and you have just dropped a ball off it. The ball will speed up as it falls to the ground (I am assuming it does not reach termial velocity). This means that a straight line for our displacement-time graph will not accurately represent the ball, because the ball does not stay at the same speed while it is falling. For our displacement-time graph, we want it to have a small gradient at the start with the gradient getting steeper towards the end. One possible graph could be:\n\n\n\n\n\n\n\n\n\nI have chosen to use the function \\(x(t)=t^2\\) for this graph. This curve accuratly represents the path of the ball, but it does make calculating the speed of the ball trickier. With a straight line graph, to calculate the speed we need to pick two points and work out the gradient between them. With a straight line graph the gradient will be the same everywhere so it doesn’t matter which two points we pick. However, with a curve that has a changing gradient this will not work. We discussed last week that if we want to calculate the speed, we need to choose an interval around the point that we want which is really small. The smaller the interval then the more accurate the value of the speed. We can now use some clever Maths to calculate the speed over a really small interval so we can be really accurate.\n\nExample: How to calculate speed from a non-linear displacement time graph\nImagine I have a ball falling, which can be represented by the function \\(x(t)=t^2\\), and I want to find the speed of the ball after 3 seconds. Your first instinct might be to do \\(x(3)=3^2=9\\), and say that the ball has travelled \\(9m\\) in \\(3s\\) so the ball must be travelling at \\(3ms^{-1}\\). However, this is not true, because this is the average speed of the ball between \\(0s\\) and \\(3s\\) NOT the exact speed of the ball at \\(3s\\). To find our speed of the ball at \\(3s\\) we need to create our interval. One of the points I’m going to use is \\((3,9)\\) because we have already calculated it. Then I’m going to imagine that we waiting a small amount of time after 3 seconds. I don’t know how long this small amount of time is, so I’m going to call it \\(\\Delta t\\). This would mean our other point is \\((3+ \\Delta t, (3+ \\Delta t)^2)\\). This can be seen in the graph below:\n\n\n\n\n\n\n\n\n\nNow that we have our interval, we can work out the speed of the ball within this interval (which is the same as the gradient of the orange line). We will do this as follows: \\[\\text{Gradient} = \\text{Speed} = \\dfrac{\\text{Change in displacement}}{\\text{Change in time}} = \\dfrac{(3+ \\Delta t )^2 - 9}{(3 + \\Delta t) -3}\\]\nWe can now simplify this fraction to get: \\[ \\dfrac{(3+ \\Delta t )^2 - 9}{(3 + \\Delta t) -3} = \\dfrac{9 + 6 \\Delta t + (\\Delta t)^2 -9}{3 + \\Delta t - 3} = \\dfrac{6 \\Delta t + (\\Delta t)^2}{\\Delta t}= 6 +\\Delta t\\]\nOur final step requires using a limit. Last week we said that using the smallest interval possible will give the most accurate value for the speed. The smallest interval will happen when 3 is as close to \\(3 +\\Delta t\\) as possible, and this will happen when \\(\\Delta t\\) gets close to zero. So we can take the limit as \\(\\Delta t\\) approaches zero: \\[ \\lim_{\\Delta t \\rightarrow 0} 6 + \\Delta t = 6 \\] The above limit is shown by the diagram below. Notice how the orange line best represents the gradient (or the speed) when \\(\\Delta t\\) is smaller.\n                            \n                                            \nIn conclusion, after 3 seconds the ball is travelling at exactly \\(6ms^{-1}\\).",
     "crumbs": [
       "Lessons",
       "Lesson 2"

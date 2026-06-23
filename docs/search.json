@@ -196,9 +196,53 @@
   {
     "objectID": "Lesson 3.html",
     "href": "Lesson 3.html",
-    "title": "Lesson 3",
+    "title": "Lesson 3: More formal Mathematics",
     "section": "",
-    "text": "Lesson 3\nThis page is under construction…",
+    "text": "In last weeks lesson, you learnt how how to find an equation for speed when you have been given an equation for displacement. This is called differenciation. You are differenciating the equation for displacement with respect to time, which gives you the equation for speed. In this weeks lesson, we will explore some formulas that are very important for differenciation.",
+    "crumbs": [
+      "Lessons",
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html#section-1-differenciation-formulas",
+    "href": "Lesson 3.html#section-1-differenciation-formulas",
+    "title": "Lesson 3: More formal Mathematics",
+    "section": "Section 1: Differenciation formulas",
+    "text": "Section 1: Differenciation formulas\nIf you have an equation for displacement, \\(x(t)\\), and you want to find the equation for speed, \\(v(t)\\), then you can use the following formula: \\[ v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{x(t + \\Delta t) - x(t)}{\\Delta t}\\] This might look strange, but this is exactly what we learnt to do last week! One of the examples last week was to find the equation for speed when the equation for dispalcement is \\(x(t)=t^2\\). We can do this quickly by using this formula: \\[v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{x(t + \\Delta t) - x(t)}{\\Delta t}= \\lim_{\\Delta t \\rightarrow 0} \\dfrac{(t + \\Delta t)^2 - t^2}{\\Delta t}= \\lim_{\\Delta t \\rightarrow 0} \\dfrac{t^2 + 2t \\Delta t + \\Delta t^2 - t^2}{\\Delta t} =\\lim_{\\Delta t \\rightarrow 0} \\dfrac{2t \\Delta t + \\Delta t^2}{\\Delta t} = \\lim_{\\Delta t \\rightarrow 0} 2t + \\Delta t = 2t\\]\nHave a go yourself, I’ve wrote out an example below using this formula where the equation for displacement is \\(x(t)=t^3\\). Please fill in the gaps where there is ‘\\(\\ldots\\)’\n\\[v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{x(t + \\Delta t) - x(t)}{\\Delta t}=\n\\lim_{\\Delta t \\rightarrow 0} \\dfrac{(t + \\Delta t)^3 - t^3}{\\ldots}=\n\\lim_{\\Delta t \\rightarrow 0} \\dfrac{t^3 + 3t^2 \\Delta t + \\ldots - t^3}{\\Delta t} =\n\\lim_{\\Delta t \\rightarrow 0} \\dfrac{\\ldots}{\\Delta t} =\n\\lim_{\\Delta t \\rightarrow 0} 3t^2 + 3t\\Delta t+\\Delta t^2 =\n\\ldots\\]\nThis next part will explore the answer to one of the challenge questions from last week (question 4 from section 3). Don’t worry if you haven’t done the question as I will give you the answer now. The question asked ‘’can you spot a pattern and give a formula for when the displacement is \\(x(t)=t^n\\) where \\(n\\) can be any natural number? (Hint: remember that when \\(x(t)=t^3\\), \\(v(t)=3t^2\\) and that when \\(x(t)=t^2\\),\\(v(t)=2t\\))’’. We know that when \\(x(t)=t^4\\), \\(v(t)=4t^3\\) and that when \\(x(t)=t^3\\), \\(v(t)=3t^2\\) and that when \\(x(t)=t^2\\),\\(v(t)=2t\\). From this, it looks like we take the number in the power, move it down in front, and then take one away from the power. This is exactly what’s happening! When you have an equation for dispalcement in the form \\(x(t)=t^n\\), then the equation for speed will be: \\[v(t)=nt^{n-1}\\]\nI have included the proof for this formula at the bottom of this lesson, however you do not need to learn about it. I have included it if you’re interested.\nTo give some examples of this formula, we can do: \\[x(t)=t^5 \\implies v(t)= 5 t^4 \\] \\[x(t)=t^6 \\implies v(t)= 6 t^5 \\] \\[x(t)=t^7 \\implies v(t)= 7 t^6 \\]\nThere are some more rules that we can learn about. For example, the formula for \\(v(t)\\) when you have \\(x(t)=t^n\\) will also work if you have multiple power of \\(t\\) in the equation for displacement. An example would be ‘What is the equation for speed when your equation for displacement is \\(x(t)=t^3+t^2\\)?’. We can use our formula to get: \\[ x(t)=t^3+t^2 \\implies v(t)=3t^2 + 2t\\] Another example would be ‘What is the equation for speed when your equation for displacement is \\(x(t)=t^6+t^4\\)?’. Again, we can use our formula to get: \\[x(t)=t^6+t^4 \\implies v(t) = 6t^5 +4t^3\\]\nOur last rule (before we look at some practice questions) is going to be what happens to the equation for speed if you have a number in front of our equation for displacement. We have only looked at equations for displacement where we have \\(x(t)=t^n\\), but what happens if we have something like \\(x(t)=3t^4\\)? The answer is quite simple, we ignore the ‘3’ at the start and then multiply our answer by 3 at the end. We would get: \\[x(t)=3t^4 = 3 \\times t^4 \\implies v(t)=3 \\times 4t^3 = 12t^3\\] When we take the derivative of a displacement function, it does not effect the number in front of a power of \\(t\\). Now, we can combine these rules and I can talk through one example before looking at a practice question.\n\nExample: Using differenciation rules\nImgaine we have a planet which moves following the equation \\(x(t)=4t^4 - 2t^3\\). What is the equation for speed? For this example, we can write out the equation for displacement so we separate the numbers in front of the powers of \\(t\\): \\[ x(t)=4t^4 - 2t^3 = 4 \\times t^4 - 2 \\times t^3\\] Now we can diffferenciate this using our formula: \\[x(t)=4 \\times t^4 -2 \\times t^3 \\implies v(t)= 4 \\times 4t^3 - 2 \\times 3t^2\\] Now we can combine the numbers back together to get our final answer: \\[ v(t)= 4 \\times 4t^3 - 2 \\times 3t^2 = 16t^3 -6t^2\\] This gives us our final answer. When the equation for displacement is \\(x(t)=4t^4 - 2t^3\\) then the equation for velocity will be \\(v(t)=16t^3 -6t^2\\).",
+    "crumbs": [
+      "Lessons",
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html#practice-questions-differenciation-formulas",
+    "href": "Lesson 3.html#practice-questions-differenciation-formulas",
+    "title": "Lesson 3: More formal Mathematics",
+    "section": "Practice questions: Differenciation formulas",
+    "text": "Practice questions: Differenciation formulas\n\nIf the equation for displacement is \\(x(t)=t^9\\), what is the equation for speed?\nIf the equation for displacement is \\(x(t)=t^{11} + t^5\\), what is the equation for speed?\nIf the equation for displacement is \\(x(t)=2t^2 +5t\\), what is the eqation for speed?\nI am going to drop an object off a building. The object falls following the equation \\(x(t)=t^5-2t^2+5t\\). What is the speed of the object 2 seconds after I drop it?",
+    "crumbs": [
+      "Lessons",
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html#section-2-differentiating-twice",
+    "href": "Lesson 3.html#section-2-differentiating-twice",
+    "title": "Lesson 3: More formal Mathematics",
+    "section": "Section 2: Differentiating twice?",
+    "text": "Section 2: Differentiating twice?\nWe have only looked at differenciating an equation for displacement to get an equation for speed, but what happens if we differenciate our equation for speed? In lessons one and two we spoke about how the gradient of a displacement-time graph represents the speed of the object. But what if we plotted a speed-time graph, what would the gradient of a speed time graph represent?\nBack in lesson one we saw a dispalcement-time graph of Usain Bolt’s 100m world record at the 2008 Beijing Olympics. This graph is shown below.\n\n\n\n\n\n\n\n\n\nNow what would a speed-time graph look like? We know that the speed is represented by the gradient of the graph, so we can work out the speed for each interval by finding the gradient at each interval. For example, Bolt’s speed between \\(0m\\) and \\(10m\\) is going to be \\(\\approx \\frac{10}{1.9}\\), because it looks like it took Bolt around \\(1.9s\\) to travel the first \\(10m\\). By working out the speeds at each interval, our speed-time graph will look like:",
+    "crumbs": [
+      "Lessons",
+      "Lesson 3"
+    ]
+  },
+  {
+    "objectID": "Lesson 3.html#extension-content-proof-for-the-formula-vtntn-1",
+    "href": "Lesson 3.html#extension-content-proof-for-the-formula-vtntn-1",
+    "title": "Lesson 3: More formal Mathematics",
+    "section": "Extension content: Proof for the formula \\(v(t)=nt^{n-1}\\)",
+    "text": "Extension content: Proof for the formula \\(v(t)=nt^{n-1}\\)\nRemember, you do not need to know this, I’ve just included it for anyone that is interested in a better way of proving this formula (because in the lesson we said it was true from spotting a pattern which is not Mathematically rigorous). We have our equation for displacement \\(x(t)=t^n\\) which means we can now use our formula for \\(v(t)\\): \\[v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{x(t + \\Delta t) - x(t)}{\\Delta t} = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{(t + \\Delta t)^n - t^n}{\\Delta t} \\]\nThe tricky part of simplifying this fraction is being able to expand \\((t + \\Delta t)^n\\). Fortunately, we know how to do this. We can use the formula for the binomial expansion (I have done this in lessons before but we can can still recap it). The formula for the binomial expansion is: \\[ (x+y)^n = \\binom{n}{0} x^n + \\binom{n}{1} x^{n-1}y + \\binom{n}{2} x^{n-2}y^2 + \\dots + \\binom{n}{n-2} x^2 y^{n-2} + \\binom{n}{n-1} x y^{n-1} + \\binom{n}{n} y^n\\]\nWe can simplify this formula a little bit, because we know that \\(\\binom{n}{0}=\\binom{n}{n}=1\\) and that \\(\\binom{n}{1} = \\binom{n}{n-1} = n\\). If you want to see why this is true then I would recommend looking at how the binomial expansion relates to pascals triangle. Using these new simplifications, we can write our formula for the binomial as: \\[ (x+y)^n = x^n + nx^{n-1}y + \\binom{n}{2} x^{n-2}y^2 + \\ldots + \\binom{n}{n-2} x^2 y^{n-2} + n x y^{n-1} + y^n\\]\nAs we want to expand \\((t + \\Delta t)^n\\) we can use this formula where \\(x=t\\) and \\(\\Delta t = y\\). This will give us: \\[v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{(t + \\Delta t)^n - t^n}{\\Delta t} = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{t^n + nt^{n-1} \\Delta t + \\binom{n}{2} t^{n-2} \\Delta t^2 + \\ldots + \\binom{n}{n-2} t^2 \\Delta t^{n-2} + n t \\Delta t^{n-1} + \\Delta t^n - t^n}{\\Delta t}\\] Then we can simplify this fraction: \\[ v(t) = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{t^n + nt^{n-1} \\Delta t + \\binom{n}{2} t^{n-2} \\Delta t^2 + \\ldots + \\binom{n}{n-2} t^2 \\Delta t^{n-2} + n t \\Delta t^{n-1} + \\Delta t^n - t^n}{\\Delta t} = \\lim_{\\Delta t \\rightarrow 0} \\dfrac{nt^{n-1} \\Delta t + \\binom{n}{2} t^{n-2} \\Delta t^2 + \\ldots + \\binom{n}{n-2} t^2 \\Delta t^{n-2} + n t \\Delta t^{n-1} + \\Delta t^n }{\\Delta t} \\] \\[ = \\lim_{\\Delta t \\rightarrow 0}nt^{n-1}+ \\binom{n}{2} t^{n-2} \\Delta t + \\ldots + \\binom{n}{n-2} t^2 \\Delta t^{n-3} + n t \\Delta t^{n-2} + \\Delta t^{n-1} = nt^{n-1}\\] Which gives us our final result, and it is the formula that we expected to get, \\(v(t)=nt^{n-1}\\).",
     "crumbs": [
       "Lessons",
       "Lesson 3"

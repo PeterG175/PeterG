@@ -242,6 +242,10 @@ window.Quarto = {
 <li>I am going to drop an object off a building. The object falls following the equation <span class="math inline">\(x(t)=t^5-2t^2+5t\)</span>. What is the speed of the object 2 seconds after I drop it?</li>
 </ol>
 </section>
+<section id="disclaimer" class="level2">
+<h2 class="anchored" data-anchor-id="disclaimer">Disclaimer</h2>
+<p>I cannot remember if I told everyone this in lessons but it is important. Within this course I have said that speed is the same as velocity and distance is the same as displacement. This is not true, but it does not impact the Maths that we are doing and as this is a Maths course and not a Physics course then I am happy to ignore this. If you ever talk about this subject outside of Svitlo (maybe in a conversation with another teacher), then they will probably tell you which one to use. If I have time I will make an area of the website which explains the difference.</p>
+</section>
 <section id="section-2-differentiating-twice" class="level2">
 <h2 class="anchored" data-anchor-id="section-2-differentiating-twice">Section 2: Differentiating twice?</h2>
 <p>We have only looked at differenciating an equation for displacement to get an equation for speed, but what happens if we differenciate our equation for speed? In lessons one and two we spoke about how the gradient of a displacement-time graph represents the speed of the object. But what if we plotted a speed-time graph, what would the gradient of a speed time graph represent?</p>
@@ -256,7 +260,7 @@ window.Quarto = {
 </div>
 </div>
 <p>Now what would a speed-time graph look like? We know that the speed is represented by the gradient of the graph, so we can work out the speed for each interval by finding the gradient at each interval. For example, Bolt’s speed between <span class="math inline">\(0m\)</span> and <span class="math inline">\(10m\)</span> is going to be <span class="math inline">\(\approx \frac{10}{1.9}\)</span>, because it looks like it took Bolt around <span class="math inline">\(1.9s\)</span> to travel the first <span class="math inline">\(10m\)</span>. By working out the speeds at each interval, our speed-time graph will look like:</p>
-<div id="c083e6ed-4ca6-44cd-8420-db0ca5710fe5" class="cell" data-execution_count="6">
+<div id="c083e6ed-4ca6-44cd-8420-db0ca5710fe5" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -265,6 +269,23 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<p>We can notice that if we took the gradient of this graph then we would be doing: <span class="math display">\[ \text{Gradient} = \dfrac{\text{Change in velocity}}{\text{Change in time}}\]</span></p>
+<p>The gradient of this curve is the change in velocity over time. If any of you have studied a lot of physics, then you will realise that this is the formula for acceleration! If we think about this not from a Maths point of view then this does make perfect sense. If something is increasing it’s speed (changing it’s velocity), then it will be accellerating.</p>
+<p>We can see this by looking at graph 2. We know that when Usain Bolt starts the race he will want to get to his top speed as quickly as possible, this means he will have a lot of accelleration at the start of the race. We can see that the graph shows this because the graph has a very steep gradient between <span class="math inline">\(0\)</span> and <span class="math inline">\(3\)</span> seconds. As Bolt gets to his top speed, he will stop accellerating because he cannot run any faster. The graph shows this because the gradient gets less steep between around <span class="math inline">\(4\)</span> seconds and <span class="math inline">\(9\)</span> seconds. You can also see that the graph gets completely flat between around <span class="math inline">\(6\)</span> seconds and <span class="math inline">\(8\)</span> seconds, showing us that Bolt will be at his top speed between these times.</p>
+<p>Now hopefully you understand a little bit more about velocity-time graphs, we can do some Maths. It turns out, that if we take the derivative of an equation for speed (or velocity) then it will give us an equation for acceleration. This means that: <span class="math display">\[ a(t) = \lim_{\Delta t \rightarrow 0} \dfrac{v(t + \Delta t) - v(t)}{\Delta t}\]</span> Alternatively, we can take the second derivative of an equation for displacement which will give us an equation for acceleration. Now we can look at some examples.</p>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example 1</h3>
+<p>Last week we looked at dropping a ball off a building. We said that it’s equation for displacement would be <span class="math inline">\(x(t)=x^2\)</span>, and it’s equation for speed (or velocity) would be <span class="math inline">\(v(t)=2t\)</span>. Can you calculate it’s acceleration after 2 seconds?</p>
+<p>We can differenciate our equation for speed to give us an equation for acceleration. Differenciating our equation for speed will give us: <span class="math display">\[ a(t) = \lim_{\Delta t \rightarrow 0} \dfrac{2(t + \Delta t) - 2t}{\Delta t} = \lim_{\Delta t \rightarrow 0} \dfrac{2t - 2 \Delta t -2t}{\Delta t} = \lim_{\Delta t \rightarrow 0} \dfrac{2 \Delta t}{\Delta t} = 2\]</span> So our equation for acceleration is <span class="math inline">\(a(t)=2\)</span>. As there is no <span class="math inline">\('t'\)</span> in our equation for acceleration and we only have a constant, then the acceleration of the ball is going to be equal to <span class="math inline">\(2\)</span> at possible time. To answer our question, the acceleration of the ball after two seconds will be equal to two.</p>
+</section>
+</section>
+<section id="practice-questions-differenciating-twice" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions-differenciating-twice">Practice questions: Differenciating twice?</h2>
+<ol type="1">
+<li>An object’s equation for displacement is <span class="math inline">\(x(t)=4t^3\)</span>. Can you tell me it’s acceleration and speed after <span class="math inline">\(2\)</span> seconds?</li>
+<li>An object’s equation for displacement is <span class="math inline">\(x(t)=-6t^9+t^2\)</span>. Can you tell me it’s acceleration and speed after <span class="math inline">\(1\)</span> second?</li>
+<li>An object’s equation for displacement is <span class="math inline">\(x(t)=2t^2+1\)</span>. Can you tell me what it’s equation for accelleration is? And how would you interpret a velocity-time graph for this equation of motion?</li>
+</ol>
 </section>
 <section id="extension-content-proof-for-the-formula-vtntn-1" class="level2">
 <h2 class="anchored" data-anchor-id="extension-content-proof-for-the-formula-vtntn-1">Extension content: Proof for the formula <span class="math inline">\(v(t)=nt^{n-1}\)</span></h2>

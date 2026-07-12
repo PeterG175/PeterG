@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -185,21 +214,92 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="lesson-4" class="level1">
 <h1>Lesson 4</h1>
+<section id="section-1-introduction-to-integration" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-integration">Section 1: Introduction to integration</h2>
 <p>This week we will be learning about integration. Integration is the opposite of differentiation. If you are given an equation for acceleration, then you can use integration to find the equation for velocity (and use integration again to find an equation for displacement). This can be seen in the diagram below.</p>
-<div id="cell-fig-race-example" class="cell" data-execution_count="2">
+<div id="cell-fig-diff-1" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
-<div id="fig-race-example" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-diff-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-race-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Lesson 4_files/figure-html/fig-race-example-output-1.png" class="img-fluid figure-img">
+<div aria-describedby="fig-diff-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 4_files/figure-html/fig-diff-1-output-1.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-race-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diff-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: A diagram showing what method to use to find equations.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="section-1-using-integration-to-find-an-equation-for-displacement" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-using-integration-to-find-an-equation-for-displacement">Section 1: Using integration to find an equation for displacement</h2>
+<p>If we start with an equation of speed, <span class="math inline">\(v(t)=3t^2\)</span>, then you will be able to recognise this as the derivative of <span class="math inline">\(x(t)=t^3\)</span>, the equation for displacement could also be <span class="math inline">\(x(t)=t^3+3\)</span> or <span class="math inline">\(x(t)=t^3-5\)</span>. When we looked at differenciation, we talked about how constants disappear when we differenciate. This means that many different equations of displacement can give the same equation for speed. So when we try and integrate, how do we know which equation of displacement is the correct one?</p>
+<div id="cell-fig-diff-2" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-diff-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diff-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 4_files/figure-html/fig-diff-2-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diff-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A diagram showing what method to use to find equations.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The answer to this question is that we don’t know! Using only the information that the equation for speed is <span class="math inline">\(v(t)=3t^2\)</span> it is impossible to find the exact equation for displacment. Because of this, we can say that integrating <span class="math inline">\(v(t)=3t^2\)</span> with respect to time gives us <span class="math inline">\(x(t) = t^3 +c\)</span> where <span class="math inline">\(c\)</span> represents a constant (that we don’t know the value of).</p>
+<p>To find out the value of <span class="math inline">\(c\)</span>, we need more information. A useful bit of information would be the displacement of the object for just one value of time. This can be seen in the following example:</p>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example 1</h3>
+<p>Integrate the equation <span class="math inline">\(v(t)=3t^2\)</span> to find the equation of displacement. The displacement after 3 seconds is 20 <span class="math inline">\(m\)</span>.</p>
+<p>To answer this we can first say that the equation for displacement will be in the form <span class="math inline">\(x(t)=t^3+c\)</span>. Then from the other information in the question, we know that <span class="math inline">\(x(3)=20\)</span>. We can now put <span class="math inline">\(t=3\)</span> into our equation for displacement: <span class="math display">\[x(t)=t^3+c \implies x(3)=3^3+c \implies(3)=27+c\]</span> Because we know that <span class="math inline">\(x(3)=20\)</span>, then we can say that: <span class="math display">\[27+c=20\]</span> From this we can see that <span class="math inline">\(c=-7\)</span>. Our final equation for displacement is <span class="math inline">\(x(t)=t^3-7\)</span></p>
+<p>Now to introduce some formulas. From our lesson on differentiation, we saw that if we have an equation for displacement in the form <span class="math inline">\(x(t)=t^n\)</span> then the equation for velocity will be <span class="math inline">\(v(t)=nt^{n-1}\)</span>. However, as integration is the opposite of differentiation, we need to find the inverse of this formula. If we think about this logically, what we are doing is moving the power down and then taking away one from the power.</p>
+<div id="cell-fig-diff-3" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-diff-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diff-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 4_files/figure-html/fig-diff-3-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diff-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: A diagram showing what the formula for differentiation does.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To find the inverse of this process, we need to start from the right side and do the opposite of what the arrows are showing. The opposite of ‘Taking one off the power’ will be ‘Adding one to the power’ and the opposite of ‘Multiplying by the power’ will be ‘Dividing by the power’. We can show this in the diagram below. Remember in this diagram we are going from the right side to the left side.</p>
+<div id="cell-fig-diff-4" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-diff-4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diff-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Lesson 4_files/figure-html/fig-diff-4-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diff-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: A diagram showing what the formula for integration does.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>This gives us our equation for integration, however there is one more step! We must not forget to include the ‘<span class="math inline">\(+c\)</span>’ because we need more information to find out the exact equation for displacement. So to summarise, when we have an equation for speed in the form <span class="math inline">\(v(t)=t^n\)</span>, then the equation for displacement will be in the form <span class="math inline">\(x(t)=\dfrac{t^{n+1}}{n+1}+c\)</span>. Now it’s time for some practice questions.</p>
+</section>
+</section>
+<section id="practice-questions-introduction-to-integration" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions-introduction-to-integration">Practice questions: Introduction to integration</h2>
+<ol type="1">
+<li>The equation for the speed of an object is <span class="math inline">\(v(t)=8t^7\)</span>. What is the equation for displacement?</li>
+<li>The equation for the speed of an object is <span class="math inline">\(v(t)=7t\)</span>. What is the equation for displacement?</li>
+<li>The equation for the speed of an object is <span class="math inline">\(v(t)=6t^2+5\)</span>. Knowing also that the object has been displaced by 14 <span class="math inline">\(m\)</span> after one second, can you give me the exact equation for displacement?</li>
+</ol>
+</section>
+</section>
+<section id="challenge-question" class="level1">
+<h1>Challenge question</h1>
+<p>The equation for the acceleration of an object is <span class="math inline">\(a(t)=6t\)</span>. Knowing that after 2 seconds the object travelled 10 <span class="math inline">\(m\)</span> and after 4 seconds the object travelled 210 <span class="math inline">\(m\)</span>, what is the exact equation for displacement?</p>
 
 
 </section>
